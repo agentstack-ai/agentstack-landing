@@ -99,6 +99,10 @@ main {
     position: relative;
     z-index: 1;
     text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
 .logo {
@@ -110,6 +114,11 @@ main {
     text-shadow: 
         0 0 20px rgba(255,255,255,0.3),
         0 0 40px rgba(255,255,255,0.1);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 .agent {
@@ -126,6 +135,8 @@ main {
     color: rgba(255,255,255,0.7);
     letter-spacing: 4px;
     text-transform: uppercase;
+    padding: 0 20px;
+    line-height: 1.4;
 }
 
 @keyframes starfly {
@@ -184,9 +195,33 @@ main {
     
     .coming-soon {
         font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .github-corner {
+        transform: scale(0.7);
+        transform-origin: top right;
+    }
+
+    .github-stars {
+        top: 60px;
+        right: 10px;
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    #github {
+        transform: scale(0.9);
     }
 }
 
-#github {
-    margin-top: 25px;
+@media (max-width: 480px) {
+    main {
+        max-width: 95vw;
+    }
+
+    .coming-soon {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
 }
